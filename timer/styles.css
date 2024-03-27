@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.timer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid green;
+  font-size: 2rem;
+}
+
+.timer button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: aquamarine;
+  font-size: 1.2rem;
+  margin: 5px;
+}
