@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+#count {
+  padding: 10px 20px;
+  font-size: 2rem;
+}
+
+.counter button {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
