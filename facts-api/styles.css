@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+  max-width: 600px;
+}
+
+.fact {
+  border: 1px solid green;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
