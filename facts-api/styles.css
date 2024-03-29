@@ -4,8 +4,8 @@ body {
 }
 
 .container {
-  text-align: center;
   max-width: 600px;
+  text-align: center;
 }
 
 .fact {

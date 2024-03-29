@@ -4,10 +4,12 @@ const RANDOM_ENDPOINT = `${API}/api/v2/facts/random`;
 
 function getFact(endpoint, selector) {
   const element = document.querySelector(selector);
+
   fetch(endpoint)
     .then((response) => {
       if (response.status !== 200) {
-        element.textContent = "ERROR";
+        element.textContent = "ERROR with endpoint";
+        return;
       }
       return response.json();
     })
@@ -16,9 +18,9 @@ function getFact(endpoint, selector) {
     })
     .catch((error) => {
       console.error(error);
-      element.textContent = "ERROR in endpoint. Try again later";
+      element.textContent = "ERROR with fetching data. Try again later";
     });
 }
 
-getFact(TODAYS_ENDPOINT, "#todayFact");
+getFact(TODAYS_ENDPOINT, "#todaysFact");
 getFact(RANDOM_ENDPOINT, "#randomFact");
