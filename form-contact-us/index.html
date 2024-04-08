@@ -11,26 +11,26 @@
     <div class="container">
       <div class="form-container visible">
         <h2>Contact Us</h2>
-        <form id="contactForm" action="#" method="post">
+        <form id="contactForm">
           <div class="form-group">
             <label for="name">Name*:</label>
-            <input type="text" id="name" name="name" required />
+            <input type="text" id="name" required />
           </div>
           <div class="form-group">
-            <label for="email">Email*:</label>
-            <input type="email" id="email" name="email" required />
+            <label for="email">Email*"</label>
+            <input type="email" id="email" required />
           </div>
           <div class="form-group">
-            <label for="message">Message*:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="message">Message*"</label>
+            <textarea id="message" rows="5" required></textarea>
           </div>
           <button type="submit">Submit</button>
         </form>
         <div id="errorMessage"></div>
       </div>
       <div class="message-container">
-        <p class="message">Thank you for your message!</p>
-        <button id="btnShowForm">Send Message</button>
+        <p>Thank you for your message!</p>
+        <button onclick="location.reload()">Send New Message</button>
       </div>
     </div>
   </body>

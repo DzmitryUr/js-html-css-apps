@@ -2,7 +2,7 @@ body {
   display: flex;
   justify-content: center;
   margin: 0;
-  background-color: #e2ede2;
+  background-color: #c8eac8;
 }
 
 .container {
@@ -12,7 +12,8 @@ body {
   background-color: white;
   padding: 1rem;
   margin-top: 2rem;
-  border-radius: 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
 }
 
 form {
@@ -20,7 +21,6 @@ form {
 }
 
 .form-group {
-  font-size: 1.2rem;
   margin-bottom: 2rem;
   text-align: left;
 }
@@ -34,23 +34,8 @@ input[type="email"],
 textarea {
   width: 100%;
   padding: 1rem;
-  border: 1px solid gray;
-  border-radius: 5px;
+  border: 1px solid grey;
   box-sizing: border-box;
-}
-
-button {
-  padding: 1rem 2rem;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  font-size: 1.2rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: blue;
 }
 
 .form-container,
@@ -62,11 +47,16 @@ button:hover {
   display: block;
 }
 
-#errorMessage {
-  color: red;
+button {
+  padding: 1rem 2rem;
+  background-color: #09bbf6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
   font-size: 1.2rem;
 }
 
-.message-container .messae {
-  font-size: 1.2 rem;
+button:hover {
+  background-color: blue;
 }
