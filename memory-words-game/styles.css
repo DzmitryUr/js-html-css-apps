@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: lightgreen;
+}
+
+.container {
+  text-align: center;
+}
+
+.game-field {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem;
+  max-width: 45rem;
+}
+
+.card {
+  width: 10rem;
+  height: 10rem;
+  margin: 0.5rem;
+  background-color: white;
+  border: 1px solid green;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: #05d305;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: green;
+}
+
+.word {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
