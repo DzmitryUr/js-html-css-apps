@@ -1,4 +1,4 @@
-const data = [
+const projects = [
   {
     name: "Counter App",
     link: "counter/index.html",
@@ -6,6 +6,15 @@ const data = [
     description: "DOM Manipulation, Events Handling",
     youtube: "https://youtu.be/IfHdXb3Gxe0",
     github: "https://github.com/DzmitryUr/js-html-css-apps/tree/main/counter",
+  },
+  {
+    name: "Image Gallery",
+    link: "image-gallery/index.html",
+    image: "image-gallery/Image-Gallery-JavaScript.png",
+    description: "DOM Manipulation, Events Handling",
+    youtube: "https://youtu.be/pAc1hW3eKr0",
+    github:
+      "https://github.com/DzmitryUr/js-html-css-apps/tree/main/image-gallery",
   },
   {
     name: "Facts App",
@@ -22,15 +31,6 @@ const data = [
     description: "Fetch API, Async, Await",
     youtube: "https://youtu.be/b7Cgpu541lQ",
     github: "https://github.com/DzmitryUr/js-html-css-apps/tree/main/jokes-app",
-  },
-  {
-    name: "Image Gallery",
-    link: "image-gallery/index.html",
-    image: "image-gallery/Image-Gallery-JavaScript.png",
-    description: "DOM Manipulation, Events Handling",
-    youtube: "https://youtu.be/pAc1hW3eKr0",
-    github:
-      "https://github.com/DzmitryUr/js-html-css-apps/tree/main/image-gallery",
   },
   {
     name: "Accordion",
@@ -61,7 +61,7 @@ const data = [
   {
     name: "Contact Us Form",
     link: "form-contact-us/index.html",
-    image: "formform-contact-us/Contact-Us-Form.png",
+    image: "form-contact-us/Contact-Us-Form.png",
     description: "Form, Input, Textarea, Validation",
     youtube: "https://youtu.be/x2ItMNJI-rc",
     github:
