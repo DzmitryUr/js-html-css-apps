@@ -77,3 +77,85 @@ const projects = [
       "https://github.com/DzmitryUr/js-html-css-apps/tree/main/memory-words-game",
   },
 ];
+
+const cardsContainer = document.querySelector(".cards-container");
+
+function createCard({ name, link, image, description, youtube, github }) {
+  const card = createElement("div", "card");
+  card.appendChild(createHeader(name));
+  const imageLink = createLink(link, "_blank");
+  imageLink.appendChild(createImage(image, `Image ${name}`));
+  card.appendChild(imageLink);
+  card.appendChild(createParagraph(description));
+  const linksContainer = createElement("div", "links-container");
+  linksContainer.appendChild(createGithHubLink(github));
+  linksContainer.appendChild(createYoutubeLink(youtube));
+  linksContainer.appendChild(createAppLink(link, name));
+  card.appendChild(linksContainer);
+  return card;
+}
+
+function createElement(tagName, className) {
+  const element = document.createElement(tagName);
+  if (className) {
+    element.classList.add(className);
+  }
+  return element;
+}
+
+function createHeader(name) {
+  const cardHeader = createElement("div", "card-header");
+  cardHeader.textContent = name;
+  return cardHeader;
+}
+
+function createProjects() {
+  projects.forEach((project) => {
+    const card = createCard(project);
+    cardsContainer.appendChild(card);
+  });
+}
+
+function createLink(href, target) {
+  const link = createElement("a");
+  link.href = href;
+  link.target = target;
+  return link;
+}
+
+function createImage(src, alt) {
+  const image = createElement("img");
+  image.src = src;
+  image.alt = alt;
+  return image;
+}
+
+function createParagraph(text) {
+  const paragraph = createElement("p");
+  paragraph.textContent = text;
+  return paragraph;
+}
+
+function createGithHubLink(link) {
+  const linkElement = createLink(link, "_blank");
+  linkElement.appendChild(
+    createImage("images/github.svg", "Link to GitHub source code")
+  );
+  return linkElement;
+}
+
+function createYoutubeLink(link) {
+  const linkElement = createLink(link, "_blank");
+  linkElement.appendChild(
+    createImage("images/youtube.svg", "Link to YouTube video")
+  );
+  return linkElement;
+}
+
+function createAppLink(link, name) {
+  const linkElement = createLink(link, "_blank");
+  linkElement.appendChild(createImage("images/website.svg", `Link to ${name}`));
+  return linkElement;
+}
+
+createProjects();
