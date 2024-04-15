@@ -1,0 +1,51 @@
+body {
+  background-color: #efebeb;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 20rem;
+  margin-top: 2rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  background-color: #0fa6d8;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+#result {
+  margin-top: 1rem;
+  font-weight: bold;
+}
