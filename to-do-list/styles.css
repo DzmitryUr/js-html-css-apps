@@ -1,0 +1,100 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #0bdd0b;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 50rem;
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  min-height: 70vh;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.row-add-task {
+  display: flex;
+  background-color: #eee;
+  border-radius: 30px;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.row-add-task input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 1rem 0;
+  font-size: 1.3rem;
+}
+
+.row-add-task button {
+  padding: 0.7rem 1.5rem;
+  background-color: #0bb4ec;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.row-add-task button:hover {
+  background-color: #0000ff;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-row {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0.5rem;
+  margin: 0.2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.task-row .task-text {
+  flex: 1;
+  margin-left: 1rem;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.task-row input {
+  transform: scale(1.5);
+}
+
+.task-row .delete-btn {
+  background-color: #e70707;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+}
+
+.task-row .delete-btn:hover {
+  background-color: #a00606;
+}
+
+.task-row:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.completed .task-text {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.task-row.completed {
+  background-color: #eee;
+}
