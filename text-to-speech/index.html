@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text to Speech App</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h2>Text to Speech Converter</h2>
+      <textarea
+        id="text-to-speech"
+        rows="5"
+        cols="50"
+        placeholder="Type text here"
+      ></textarea>
+      <div>
+        <label for="voice-select"></label>
+        <select id="voice-select"></select>
+        <button id="speak-btn">Speak</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
